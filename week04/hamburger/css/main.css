@@ -1,0 +1,41 @@
+/* 헤더 스타일 */
+
+header {
+    background: black;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    padding: 0 15px;
+}
+
+header>.material-icons {
+    position: absolute;
+}
+
+header>.material-icons#btn--open {
+    display: block;
+}
+
+header>.material-icons#btn--close {
+    display: none;
+}
+
+/* COMMON */
+.material-icons {
+    color: #F6F5F0;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+/* SIDE NAV */
+nav {
+    position: absolute;
+    top: 60px;
+    height: calc(100vh - 60px);
+    width: 300px;
+    background: #000;
+    transform: translateX(-100%);
+    transition: .4s;
+}
